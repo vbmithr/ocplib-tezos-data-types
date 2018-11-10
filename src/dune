@@ -1,0 +1,24 @@
+(library
+ (name        ocplib_tezos_misc)
+ (public_name ocplib-tezos-misc)
+ (libraries  )
+ (modules Misc)
+ (wrapped false)
+ (synopsis ""))
+
+(library
+ (name        ocplib_tezos_data_types)
+ (public_name ocplib-tezos-data-types)
+ (libraries  ocplib-tezos-misc ocplib-tezos)
+ (modules
+  Ico_constants
+  Data_types
+  Utils
+  Debug_constants
+  Micheline_printer
+  Api_encoding
+  Config
+  Data_string
+  Infos)
+ (wrapped false)
+ (synopsis ""))
